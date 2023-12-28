@@ -30,25 +30,40 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 #### Figure -02 FULL ADDER 
 
 ### Procedure
+```
 
 Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
-### 
-Program:
+###
+```
+## Program:
+```
 /*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: SOWMIA R
+RegisterNumber:  212223050052
 */
+module project_3(sum,carry,a,b); 
+input a,b; 
+output sum,carry; 
+xor sum1(sum,a,b); 
+and carry1(carry,a,b); 
+endmodule
 Logic symbol & Truthtable
-RTL realization
+```
+## RTL realization
 
-### Output:
-### RTL
+![image](https://github.com/Sowmia05/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/154528111/c3b251a7-523f-4d65-ae0a-3722ec3c53a6)
+
 ### TIMING DIAGRAM
+![image](https://github.com/Sowmia05/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/154528111/d0f7d91e-568a-477d-8ed2-f2d0553e4158)
+
 
 
 ### TRUTH TABLE 
+![image](https://github.com/Sowmia05/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/154528111/169be7a6-e7b3-4d81-a81a-8a6051ca5781)
+
 
 ### Result:
+hus the given logic functions are implemented and their operations are verified using verilog programming
